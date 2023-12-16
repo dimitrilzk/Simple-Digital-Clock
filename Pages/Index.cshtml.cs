@@ -12,9 +12,12 @@ namespace Simple_Digital_Clock.Pages
             _logger = logger;
         }
 
+        public DateTime Clock { get; set; }
+
         public void OnGet()
         {
-
+            var time = DateTime.Now;
+            Clock = time;
         }
     }
 }
